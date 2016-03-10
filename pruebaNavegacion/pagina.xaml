@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="pruebaNavegacion.pagina"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:pruebaNavegacion"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#090968">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <!--<TextBlock Text="TuPedido" FontFamily="Brush Script MT" FontSize="80" Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Center">
+                
+        </TextBlock>-->
+        <Image Source="Assets/Logo.png"/>
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Nombre de Usuario" Foreground="White" FontSize="19" Margin="55,0,0,0"/>
+            <TextBox Margin="55,0"/>
+            <TextBlock Text="Contraseña" Foreground="White" FontSize="19" Margin="55,0,0,0"/>
+            <PasswordBox Margin="55,0"/>
+            <TextBlock Text="Correo" Foreground="White" FontSize="19" Margin="55,0,0,0"/>
+            <TextBox Margin="55,0"/>
+
+            <Button Content="REGISTRARSE" Foreground="White" Background="Green" HorizontalAlignment="Center" Width="250" Height="50" Margin="55,20"/>
+            <Button Content="Cancelar" Foreground="White" Background="Red" HorizontalAlignment="Center" Width="250" Height="50" Margin="55,0"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

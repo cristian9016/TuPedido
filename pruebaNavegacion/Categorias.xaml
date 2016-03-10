@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="pruebaNavegacion.Categorias"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:pruebaNavegacion"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#090968">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <Image Source="Assets/Logo.png" Margin="59,0,62,0" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-17.825"/>
+            </Image.RenderTransform>
+        </Image>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.ColumnSpan="2" Text="Categorias" FontSize="30" Foreground="White" HorizontalAlignment="Center"/>
+            <Rectangle Grid.Row="1" Fill="Gray" Height="110" Width="110"/>
+            <Rectangle Grid.Row="2" Fill="Gray" Height="110" Width="110"/>
+            <Rectangle Grid.Row="1" Grid.Column="1" Fill="Gray" Height="110" Width="110"/>
+            <Rectangle Grid.Row="2" Grid.Column="1" Fill="Gray" Height="110" Width="110"/>
+            <Image Grid.Row="1" Source="Assets/hotdog.png" Height="110" Width="110"/>
+            <Image Grid.Row="1" Grid.Column="1" Source="Assets/hamburguesa.png" Height="110" Width="110"/>
+            <Image Grid.Row="2" Source="Assets/sandwich.png" Height="110" Width="110"/>
+            <Image Grid.Row="2" Grid.Column="2" Source="Assets/pizza.png" Height="110" Width="110"/>
+        </Grid>
+
+    </Grid>
+</Page>
